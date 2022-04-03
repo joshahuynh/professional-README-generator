@@ -119,7 +119,7 @@ const questions = [
         type: 'list',
         name: 'licenses',
         message: 'What license would you like to include?',
-        choices: ['MIT', 'GNU GPLv3', 'Apache', 'ISC'],
+        choices: ['MIT', 'GPL', 'Apache'],
         when: ({confirmLicenses}) => {
             if (confirmLicenses) {
                 return true;
@@ -137,6 +137,19 @@ const questions = [
                 return true;
             } else {
                 console.log('Please provide instructions on how to run your tests!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'screenshot',
+        message: 'To add a screenshot, create an `assets/images` folder in your repository and provide the name of the screenshot file:',
+        validate: screenshotInput => {
+            if (screenshotInput) {
+                return true;
+            } else {
+                console.log('Please provide a screenshot of your program!');
                 return false;
             }
         }
