@@ -12,7 +12,7 @@
   ## Usage:
   Run "node index.js" in the terminal and answer the following questions to generate your professional README!
   ## Demo:
-  https://watch.screencastify.com/v/pH4xxG6LcKBPf67Oghl9
+  https://watch.screencastify.com/v/XRycosEANgp2kZ9fuRl2
   ## Contact Me:
   - Github: [joshahuynh](https://github.com/joshahuynh)
   - Email: joshahuynh@gmail.com 
